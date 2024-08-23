@@ -1,0 +1,43 @@
+@use '$lib/variable' as v;
+
+body {
+  background-color: v.$background;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+}
+
+.show-on-tab {
+  display: none;
+}
+
+@media (max-width: v.$breakpoint-md) {
+  .show-on-tab {
+    display: block;
+    color: black;
+
+  }
+  .hide-on-tab {
+    display: none;
+  }
+}
+
+// Scrollbar
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

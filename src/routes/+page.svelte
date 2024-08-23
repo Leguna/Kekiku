@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Meta from '$lib/my_components/meta.svelte';
+    import Hero from '$lib/my_components/Hero/hero.svelte';
+</script>
+
+<Meta title="Kekiku | Home" />
+<Hero/>
+
+<style lang="scss">
+  @use '$lib/variable' as v;
+
+  div {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+</style>

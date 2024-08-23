@@ -18,15 +18,26 @@
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/eslint": "^9.6.0",
-		"eslint": "^9.0.0",
+		"autoprefixer": "^10.4.20",
+		"eslint": "8.55",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
 		"globals": "^15.0.0",
+		"postcss": "^8.4.41",
+		"postcss-import": "^16.1.0",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
+		"sass": "^1.77.8",
+		"sass-embedded": "^1.77.8",
 		"svelte": "^4.2.7",
+		"tailwindcss": "^3.4.10",
 		"vite": "^5.0.3",
 		"vitest": "^2.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@eslint/js": "^9.9.0",
+		"node-sass": "^9.0.0",
+		"swiper": "^11.1.10"
+	}
 }

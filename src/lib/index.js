@@ -1,1 +1,10 @@
-// place files you want to import through the `$lib` alias in this folder.
+// Web config
+let config = {
+	api: {
+		url: 'http://localhost:3000/api'
+	}, contact: {
+		email: 'ahmadtuflihunxd@gmail.com'
+	}
+};
+
+export default config;
