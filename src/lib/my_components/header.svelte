@@ -7,6 +7,7 @@
     let infoClosed;
     let headerEl;
     let headerHeight;
+    let width;
 
     function removeInfo() {
         infoClosed = true;
@@ -20,6 +21,7 @@
     }
 
     onMount(() => {
+        width = window.innerWidth;
         headerHeight = headerEl;
         // Add Listener for search
         let allSearchInput = document.querySelectorAll('input[type="search"]');
@@ -99,9 +101,12 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                        </form>
+                        {#if width > 768}
+                            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                                <input id="search-input" type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                            </form>
+                        {/if}
+                        }
                     </div>
                 </div>
                 <li class=""><a href="/login">LOGIN</a></li>
@@ -119,7 +124,7 @@
             <menu class="p-4">
                 <li>
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                        <input id="search-input" type="search" class="form-control" placeholder="Search..." aria-label="Search">
                     </form>
                 </li>
                 <li><a class="btn container-fluid" href="/">Home</a></li>

@@ -1,16 +1,14 @@
 <script>
     import Swiper from 'swiper';
-    import 'swiper/css';
-    import 'swiper/css/navigation';
-    import 'swiper/css/pagination';
-    import 'swiper/css/scrollbar';
 
     import {onMount} from "svelte";
-    import heroDataHome from "$lib/my_components/Hero/heroDataHome.js";
+    import heroDataHome from "$lib/mocks/heroDataHome.js";
+    import 'swiper/css/autoplay';
 
     onMount(() => {
-        new Swiper('.swiper', {
+        new Swiper('.home-hero-swiper', {
             loop: true,
+            autoplay: true,
             pagination: {
                 el: '.swiper-pagination',
             },
@@ -25,10 +23,10 @@
     });
 </script>
 
-<div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+<div class="swiper home-hero-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
     <div class="swiper-wrapper" aria-live="polite">
         {#each heroDataHome as heroData,i}
-            <div class="swiper-slide" class:swiper-slide-active={i===0}
+            <div class="swiper-slide" data-swiper-autoplay="2000" class:swiper-slide-active={i===0}
                  role="group" aria-label="">
                 <img src={heroData.image} alt="hero"/>
                 <div class="carousel-box">
@@ -48,7 +46,6 @@
   @use '$lib/variable' as v;
 
   .swiper-slide {
-    width: 100%;
     height: 650px;
     display: flex;
     justify-content: center;
@@ -62,7 +59,6 @@
     }
   }
 
-
   .carousel-caption {
     background-color: rgba(0, 0, 0, 0.60);
     border-radius: v.$large;
@@ -71,18 +67,16 @@
     top: 30%;
     left: 30%;
     align-content: center;
-    max-width: 24rem;
+    max-width: 30rem;
     transform: translate(-50%, -15%);
     text-align: center;
     color: white;
     font-size: 2rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
   }
 
   h1 {
-
     filter: blur(0);
     -webkit-filter: blur(0);
     font-size: 2rem;
@@ -91,12 +85,6 @@
 
   p {
     font-size: 1.2rem;
-  }
-
-  @media (max-width: v.$breakpoint-md) {
-    .carousel-caption {
-      left: 50%;
-    }
   }
 
   .carousel-button {
@@ -116,5 +104,20 @@
     }
   }
 
+  @media (max-width: v.$breakpoint-md) {
+    .carousel-caption {
+      width: 80%;
+      padding: v.$large;
+      left: 50%;
+      transform: translate(-50%, -10%);
 
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
 </style>

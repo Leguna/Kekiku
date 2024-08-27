@@ -19,9 +19,10 @@
                     {#if width > 768}
                         <div class="hide-on-tab flex items-center mt-8">
                             <input
+                                    id="email"
                                     type="email"
                                     name="email"
-                                    id="email"
+                                    autocomplete="email"
                                     class="w-full py-2 px-4 rounded-l-md"
                                     placeholder="Enter your email address"
                             />
@@ -32,9 +33,10 @@
                     {:else}
                         <div class="flex items-center show-on-tab mt-4" style="font-size: 14px">
                             <input
+                                    id="email"
                                     type="email"
                                     name="email"
-                                    id="email"
+                                    autocomplete="email"
                                     class="w-full py-2 px-2 rounded-l-md text-center"
                                     placeholder="Enter your email address"
                             />
