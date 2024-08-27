@@ -1,57 +1,120 @@
 <script>
-    import Swiper from "swiper";
+    import Swiper from 'swiper';
+    import 'swiper/css';
+    import 'swiper/css/navigation';
+    import 'swiper/css/pagination';
+    import 'swiper/css/scrollbar';
+
     import {onMount} from "svelte";
+    import heroDataHome from "$lib/my_components/Hero/heroDataHome.js";
 
     onMount(() => {
-        let swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
+        new Swiper('.swiper', {
             loop: true,
             pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
+                el: '.swiper-pagination',
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
             },
         });
     });
 </script>
-<div>
-    <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-        <div class="swiper-wrapper" id="swiper-wrapper-ccfd4fa4b5bca9cd" aria-live="polite"
-             style="transition-duration: 0ms; transform: translate3d(-1058px, 0px, 0px); transition-delay: 0ms;">
-            <div class="swiper-slide swiper-slide-prev" style="width: 1058px;" role="group" aria-label="1 / 9">Slide 1</div>
-            <div class="swiper-slide swiper-slide-active" style="width: 1058px;" role="group" aria-label="2 / 9">Slide 2
+
+<div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+    <div class="swiper-wrapper" aria-live="polite">
+        {#each heroDataHome as heroData,i}
+            <div class="swiper-slide" class:swiper-slide-active={i===0}
+                 role="group" aria-label="">
+                <img src={heroData.image} alt="hero"/>
+                <div class="carousel-box">
+                    <div id="carousel-{i}" class="carousel-caption">
+                        <h1>{heroData.title}</h1>
+                        <p>{heroData.description}</p>
+                        <a href={heroData.link} class="carousel-button">Learn More</a>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide swiper-slide-next" style="width: 1058px;" role="group" aria-label="3 / 9">Slide 3</div>
-            <div class="swiper-slide" style="width: 1058px;" role="group" aria-label="4 / 9">Slide 4</div>
-            <div class="swiper-slide" style="width: 1058px;" role="group" aria-label="5 / 9">Slide 5</div>
-            <div class="swiper-slide" style="width: 1058px;" role="group" aria-label="6 / 9">Slide 6</div>
-            <div class="swiper-slide" style="width: 1058px;" role="group" aria-label="7 / 9">Slide 7</div>
-            <div class="swiper-slide" style="width: 1058px;" role="group" aria-label="8 / 9">Slide 8</div>
-            <div class="swiper-slide" role="group" aria-label="9 / 9" style="width: 1058px;">Slide 9</div>
-        </div>
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+        {/each}
     </div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 </div>
 
 <style lang="scss">
   @use '$lib/variable' as v;
 
-  #hero {
-    height: 80vh;
+  .swiper-slide {
     width: 100%;
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f1f1f1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.60);
+    border-radius: v.$large;
+    padding: v.$padding-large;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    align-content: center;
+    max-width: 24rem;
+    transform: translate(-50%, -15%);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
   }
+
+  h1 {
+
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: v.$breakpoint-md) {
+    .carousel-caption {
+      left: 50%;
+    }
+  }
+
+  .carousel-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
 
 </style>
