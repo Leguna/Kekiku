@@ -13,8 +13,8 @@
                 el: '.swiper-pagination',
             },
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-core-next',
+                prevEl: '.swiper-core-prev',
             },
             scrollbar: {
                 el: '.swiper-scrollbar',
@@ -61,8 +61,8 @@
 
   .carousel-caption {
     background-color: rgba(0, 0, 0, 0.60);
-    border-radius: v.$large;
-    padding: v.$padding-large;
+    border-radius: v.$large-size;
+    padding: v.$large-size;
     position: absolute;
     top: 30%;
     left: 30%;
@@ -107,7 +107,7 @@
   @media (max-width: v.$breakpoint-md) {
     .carousel-caption {
       width: 80%;
-      padding: v.$large;
+      padding: v.$large-size;
       left: 50%;
       transform: translate(-50%, -10%);
 

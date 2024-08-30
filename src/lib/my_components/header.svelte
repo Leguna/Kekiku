@@ -1,8 +1,8 @@
 <script>
-	import {slide} from 'svelte/transition';
-	import {onMount} from 'svelte';
+    import {slide} from 'svelte/transition';
+    import {onMount} from 'svelte';
 
-	let prevScrollY = 0;
+    let prevScrollY = 0;
     let showInfo = true;
     let infoClosed;
     let headerEl;
@@ -103,7 +103,8 @@
                     <div class="offcanvas-body">
                         {#if width > 768}
                             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                                <input id="search-input" type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                                <input id="search-input" type="search" class="form-control" placeholder="Search..."
+                                       aria-label="Search">
                             </form>
                         {/if}
                         }
@@ -124,7 +125,8 @@
             <menu class="p-4">
                 <li>
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-                        <input id="search-input" type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                        <input id="search-input" type="search" class="form-control" placeholder="Search..."
+                               aria-label="Search">
                     </form>
                 </li>
                 <li><a class="btn container-fluid" href="/">Home</a></li>
@@ -171,9 +173,6 @@
     padding: 1em;
     border-radius: 2em;
     width: 100px;
-  }
-
-  #nav-button {
   }
 
   nav {

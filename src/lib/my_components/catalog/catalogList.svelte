@@ -2,13 +2,12 @@
     import cakeMock from "$lib/mocks/cakeData.js";
     import Swiper from "swiper";
     import {onMount} from "svelte";
-    import IntlCurrencyFormat from "$lib/utils/currency.js";
+    import CatalogItem from "./catalogItem.svelte";
 
     let cake = cakeMock.cake;
 
     onMount(() => {
         new Swiper(".catalog-list", {
-            slidesPerView: 5,
             pagination: {
                 el: ".swiper-pagination-catalog",
             },
@@ -23,22 +22,18 @@
                     slidesPerView: 3,
                 },
                 1440: {
-                    slidesPerView: 4,
+                    slidesPerView: 5,
                 },
             },
         });
     });
 </script>
 
+<h1 id="catalog-title" class="header-text content-center text-center unselectable">Trending</h1>
 <div class="catalog-list swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
     <div class="swiper-wrapper" aria-live="polite">
         {#each cake as item,i}
-            <div class="swiper-slide catalog-item" class:swiper-slide-active={i === 0} role="group"
-                 aria-label="{item.name}">
-                <img src={item.image} alt="cake"/>
-                <p>{item.name}</p>
-                <p>{IntlCurrencyFormat(item.price*10000)}</p>
-            </div>
+            <CatalogItem item={item} key={i}/>
         {/each}
     </div>
 </div>
@@ -46,23 +41,15 @@
 <style lang="scss">
   @use '$lib/variable' as v;
 
-  .catalog-list{
-    background-color: #f1f1f1;
+  .catalog-list {
+    background-color: v.$background;
     padding: 0 1em;
   }
 
-  .catalog-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: v.$padding-large;
+  #catalog-title {
+    padding-top: v.$large-size;
+    font-size: v.$font-size-large;
+    font-family: "Quicksand", sans-serif;
   }
 
-  img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: v.$large;
-  }
 </style>

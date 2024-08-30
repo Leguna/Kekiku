@@ -1,9 +1,11 @@
-
-/* Set your brand colors */
+// Colors
+$primary: #153448;
+$primary-light: #3C5B6F;
+$primary-dark: #1a2731;
 $background: #f5f5f5;
 $darkBlue: #153448;
+$darkBlue50: rgba(21, 52, 72, 0.4);
 $lightBlue: #3C5B6F;
-$lightLightBlue: #6D8CA0;
 $darkBrown: #948979;
 $lightBrown: #DFD0B8;
 $lightRed: #E6A0C4;
@@ -20,6 +22,44 @@ $medium: 8px;
 $large: 16px;
 $x-large: 32px;
 
+// Dimensions
+$small-size: 8px;
+$medium-size: 16px;
+$large-size: 40px;
 
-// Padding
-$padding-large: 40px;
+// Font
+$font-family: 'Roboto', sans-serif;
+$font-size-small: 1.2rem;
+$font-size-medium: 1.6rem;
+$font-size-large: 2.4rem;
+
+.main-font {
+  font-family: $font-family;
+  font-size: 1.6rem;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+  .header-text {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+
+  .secondary-font {
+    font-size: 1.2rem;
+  }
+}
+
+
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Text
+// Unselectable
+.unselectable {
+  user-select: none;
+}

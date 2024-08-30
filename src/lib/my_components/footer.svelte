@@ -5,11 +5,7 @@
 </script>
 
 <!-- Newsletter -->
-<div bind:clientWidth={width}
-     class="bg-gray-100 bg-polka-dot"
-     style="position: relative;
-"
->
+<div bind:clientWidth={width} class="bg-gray-100 bg-polka-dot" style="position: relative;">
     <div class="container mx-auto py-16">
         <div class="flex justify-center">
             <div class="w-3/4 max-w-lg">
@@ -94,9 +90,9 @@
 
   .bg-polka-dot {
     background-color: #f9f9f9;
-    opacity: 0.8;
-    background-image: radial-gradient(v.$lightLightBlue 1px, transparent 1px),
-    radial-gradient(v.$lightLightBlue 1px, transparent 1px);
+    opacity: 0.85;
+    background-image: radial-gradient(v.$darkBlue50 1px , transparent 1px),
+    radial-gradient(v.$darkBlue50 1px, transparent 1px);
     background-size: 52px 52px;
     background-position: 0 0,
     26px 26px;

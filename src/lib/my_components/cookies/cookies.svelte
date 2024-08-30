@@ -53,7 +53,7 @@
     z-index: 99;
     border: 2px solid black;
     border-radius: 50%;
-    background-color: v.$lightLightBlue;
+    background-color: v.$lightBrown;
     padding: 4px;
     position: fixed;
     bottom: 16px;
