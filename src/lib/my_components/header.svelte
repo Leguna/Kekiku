@@ -47,9 +47,9 @@
         <div class="flex"
              transition:slide={{ duration: 200 }}>
             <p id="info-header"
-               class="flex-auto items-center">Kekiku web in development, some features may not work
+               class="flex-auto items-center p-2">Kekiku web in development, some features may not work
                 properly</p>
-            <button on:click={removeInfo} class="pl-4 pr-4" style="color:white; margin:0; padding:0;">X</button>
+            <button on:click={removeInfo} class="pr-4 pb-2 pt-2" style="color:white;">X</button>
         </div>
     {/if}
 
@@ -89,7 +89,7 @@
                 <li class="" style="color: #153448">
                     <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"
                             href="/search" style="padding: 0; margin: 0;">
-                        <p style="margin:0;">SEARCH</p></button>
+                        <a style="margin:0;">SEARCH</a></button>
                 </li>
                 <div class="offcanvas offcanvas-top" style="max-height: 10rem" tabindex="-1" id="offcanvasTop"
                      aria-labelledby="offcanvasTopLabel">
@@ -201,6 +201,7 @@
       display: none;
     }
     #info-header {
+      margin: 0;
       font-size: 0.8em;
     }
   }

@@ -25,7 +25,7 @@
     });
 </script>
 
-<div class="bg-white bg-polka-dot">
+<div class="bg-white">
     <h1 id="chef-title" data-aos="fade-in" class="header-text content-center text-center">Our Chefs</h1>
     <div class="p-8 chef-list swiper-initialized swiper-horizontal swiper-backface-hidden">
         <div class="swiper-wrapper" aria-live="polite">
