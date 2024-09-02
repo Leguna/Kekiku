@@ -10,10 +10,6 @@ p {
   padding: 0;
 }
 
-a {
-  transition: .2s ease;
-}
-
 ul {
   padding: 0;
 }
@@ -30,6 +26,7 @@ body {
 }
 
 a {
+  transition: .2s ease;
   text-decoration: unset;
   color: white;
 }
