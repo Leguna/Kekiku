@@ -22,6 +22,7 @@
   }
 
   .chef-item {
+    justify-content: end;
     max-width: 24rem;
     background: var(--image);
     background-size: cover;

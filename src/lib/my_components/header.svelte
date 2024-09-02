@@ -88,7 +88,8 @@
             <ul class="items-center flex-1 justify-end mr-16 hide-on-tab">
                 <li class="" style="color: #153448">
                     <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"
-                            href="/search">
+                            href="/search" style="padding: 0; margin: 0;
+">
                         <p>SEARCH</p></button>
                 </li>
                 <div class="offcanvas offcanvas-top" style="max-height: 10rem" tabindex="-1" id="offcanvasTop"
