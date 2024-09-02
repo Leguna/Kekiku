@@ -73,7 +73,7 @@
             </div>
         </div>
         <div class="hide-on-tab flex">
-            <ul class="flex-1 items-center ml-16 hide-on-tab">
+            <ul class="flex-1 items-center ml-16 mt-0 mb-0 hide-on-tab" style="margin-bottom: 0;">
                 <li><a href="/products">ORDER</a></li>
                 <li><a href="/about">VISIT US</a></li>
                 <li><a href="/contact">CONTACT</a></li>
@@ -85,12 +85,11 @@
                 </a>
             </div>
             <!--	Search icon, cart and login icon-->
-            <ul class="items-center flex-1 justify-end mr-16 hide-on-tab">
+            <ul class="items-center flex-1 justify-end mr-16 mb-0 mt-0 hide-on-tab" style="margin-bottom: 0;">
                 <li class="" style="color: #153448">
                     <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"
-                            href="/search" style="padding: 0; margin: 0;
-">
-                        <p>SEARCH</p></button>
+                            href="/search" style="padding: 0; margin: 0;">
+                        <p style="margin:0;">SEARCH</p></button>
                 </li>
                 <div class="offcanvas offcanvas-top" style="max-height: 10rem" tabindex="-1" id="offcanvasTop"
                      aria-labelledby="offcanvasTopLabel">
