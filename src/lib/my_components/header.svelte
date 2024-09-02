@@ -87,8 +87,8 @@
             <!--	Search icon, cart and login icon-->
             <ul class="items-center flex-1 justify-end mr-16 mb-0 mt-0 hide-on-tab" style="margin-bottom: 0;">
                 <li>
-                    <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" class="hover-text"
-                            href="/search" style="padding: 0; margin: 0;">
+                    <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"
+                            class="hover-text" style="padding: 0; margin: 0;">
                         SEARCH
                     </button>
                 </li>
