@@ -42,14 +42,14 @@
 
 <svelte:window on:scroll={handleScroll}/>
 
-<header>
+<header >
     {#if showInfo}
         <div class="flex"
              transition:slide={{ duration: 200 }}>
             <p id="info-header"
                class="flex-auto items-center">Kekiku web in development, some features may not work
                 properly</p>
-            <button on:click={removeInfo} class="pl-4 pr-4" style="color:white">X</button>
+            <button on:click={removeInfo} class="pl-4 pr-4" style="color:white; margin:0; padding:0;">X</button>
         </div>
     {/if}
 
@@ -157,7 +157,6 @@
 
   header p {
     text-align: center;
-    padding: 0.5em;
   }
 
   .logo-header-center-tab {
