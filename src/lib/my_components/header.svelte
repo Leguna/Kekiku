@@ -42,7 +42,7 @@
 
 <svelte:window on:scroll={handleScroll}/>
 
-<header >
+<header>
     {#if showInfo}
         <div class="flex"
              transition:slide={{ duration: 200 }}>
@@ -86,10 +86,11 @@
             </div>
             <!--	Search icon, cart and login icon-->
             <ul class="items-center flex-1 justify-end mr-16 mb-0 mt-0 hide-on-tab" style="margin-bottom: 0;">
-                <li class="" style="color: #153448">
-                    <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"
+                <li>
+                    <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" class="hover-text"
                             href="/search" style="padding: 0; margin: 0;">
-                        <a style="margin:0;">SEARCH</a></button>
+                        SEARCH
+                    </button>
                 </li>
                 <div class="offcanvas offcanvas-top" style="max-height: 10rem" tabindex="-1" id="offcanvasTop"
                      aria-labelledby="offcanvasTopLabel">

@@ -39,7 +39,7 @@
 							type="button" class="btn btn-primary" data-bs-dismiss="offcanvas">OK, Thanks
 			</button>
 			<button on:click={learnMore}
-							type="button" class="btn btn-secondary" data-bs-dismiss="offcanvas">Learn More
+							type="button" class="btn btn-primary" data-bs-dismiss="offcanvas">Learn More
 			</button>
 		</div>
 	</div>

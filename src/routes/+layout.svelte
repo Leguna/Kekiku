@@ -1,5 +1,4 @@
 <script>
-    export const prerender = true;
     import "../app.css";
     import Header from '../lib/my_components/header.svelte';
     import Meta from '$lib/my_components/meta.svelte';
