@@ -25,6 +25,7 @@
     justify-content: end;
     max-width: 24rem;
     background: var(--image);
+    text-decoration: none;
     background-size: cover;
     background-position: center;
     text-align: center;

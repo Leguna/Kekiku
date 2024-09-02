@@ -10,7 +10,7 @@
 <Hero/>
 <Catalog/>
 <ChefList/>
-<Subscription/>
+<!--<Subscription/>-->
 
 <style lang="scss">
   @use '$lib/variable' as v;
