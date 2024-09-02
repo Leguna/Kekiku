@@ -33,7 +33,7 @@
                     <div id="carousel-{i}" class="carousel-caption">
                         <h1>{heroData.title}</h1>
                         <p>{heroData.description}</p>
-                        <a href={heroData.link} class="btn my-button mt-4">Learn More</a>
+                        <a href={heroData.link} class="my-button mt-4 rounded-2">Learn More</a>
                     </div>
                 </div>
             </div>

@@ -102,19 +102,19 @@ a {
 }
 
 .my-button {
-    background-color: v.$lightBlue;
-    border: none;
-  color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.my-button:hover {
   background-color: v.$darkBlue;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: v.$lightBlue;
   transition: .2s ease;
 }
 
@@ -123,6 +123,7 @@ a {
   transition: .2s ease;
   text-decoration: underline;
 }
+
 .hover-text {
   color: v.$darkBlue;
   transition: .2s ease;

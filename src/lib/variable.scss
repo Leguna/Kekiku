@@ -1,3 +1,4 @@
+
 // Colors
 $primary: #153448;
 $primary-light: #3C5B6F;
@@ -60,4 +61,15 @@ $font-size-large: 2.4rem;
 
 .unselectable {
   user-select: none;
+}
+
+.btn-primary{
+    background-color: $primary;
+    color: white;
+    border: none;
+    border-radius: $small;
+    padding: 8px 16px;
+    font-size: $font-size-small;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }

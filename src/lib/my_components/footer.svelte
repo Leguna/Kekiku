@@ -22,7 +22,7 @@
                                     class="w-full py-2 px-4 rounded-l-md"
                                     placeholder="Enter your email address"
                             />
-                            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-r-md">
+                            <button type="submit" class="my-button text-white py-2 px-4 rounded-r-md">
                                 <i class="fas fa-paper-plane"></i>
                             </button>
                         </div>
@@ -72,18 +72,18 @@
                     <div class="">
                         <h2 class="text-2xl font-bold">Links</h2>
                         <ul class="mt-2">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                            <li><a class="hover:underline no-underline" href="/">Home</a></li>
+                            <li><a class="hover:underline no-underline" href="/about">About</a></li>
+                            <li><a class="hover:underline no-underline" href="/contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="mx-4 my-2"></div>
                     <div>
                         <h2 class="text-2xl font-bold">Social</h2>
                         <ul class="mt-2">
-                            <li><a href="/">Facebook</a></li>
-                            <li><a href="/">Twitter</a></li>
-                            <li><a href="/">Instagram</a></li>
+                            <li><a class="hover:underline no-underline" href="/">Facebook</a></li>
+                            <li><a class="hover:underline no-underline" href="/">Twitter</a></li>
+                            <li><a class="hover:underline no-underline" href="/">Instagram</a></li>
                         </ul>
                     </div>
                 </div>
