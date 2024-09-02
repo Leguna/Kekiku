@@ -19,6 +19,4 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-/.idea/inspectionProfiles/Project_Default.xml
-/.idea/jsLinters/eslint.xml
-/.idea/workspace.xml
+/.idea

@@ -18,7 +18,7 @@
   .btn {
     padding: v.$small-size v.$large-size;
     margin-bottom: v.$small-size;
-    font-size: v.$font-size-small;
+    font-size: v.$font-size-s-small;
     font-family: "Quicksand", sans-serif;
     color: white;
     border: none;

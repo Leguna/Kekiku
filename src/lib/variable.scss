@@ -15,7 +15,6 @@ $breakpoint-sm: 320px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
 
-
 // Radius
 $small: 4px;
 $medium: 8px;
@@ -29,6 +28,7 @@ $large-size: 40px;
 
 // Font
 $font-family: 'Roboto', sans-serif;
+$font-size-s-small: 1.0rem;
 $font-size-small: 1.2rem;
 $font-size-medium: 1.6rem;
 $font-size-large: 2.4rem;
@@ -39,17 +39,17 @@ $font-size-large: 2.4rem;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-
-  .header-text {
-    font-size: 2.4rem;
-    font-weight: 500;
-  }
-
-  .secondary-font {
-    font-size: 1.2rem;
-  }
 }
 
+.header-text {
+  padding-top: $large-size;
+  font-size: $font-size-large;
+  font-family: "Quicksand", sans-serif;
+}
+
+.secondary-font {
+  font-size: 1.2rem;
+}
 
 .quicksand-font {
   font-family: "Quicksand", sans-serif;
@@ -58,8 +58,6 @@ $font-size-large: 2.4rem;
   font-style: normal;
 }
 
-// Text
-// Unselectable
 .unselectable {
   user-select: none;
 }

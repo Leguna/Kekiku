@@ -2,7 +2,7 @@
     import Swiper from 'swiper';
 
     import {onMount} from "svelte";
-    import heroDataHome from "$lib/mocks/heroDataHome.js";
+    import heroDataHome from "$lib/mock/heroDataHome.js";
     import 'swiper/css/autoplay';
 
     onMount(() => {

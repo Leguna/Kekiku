@@ -1,12 +1,16 @@
 <script>
-	import Meta from '$lib/my_components/meta.svelte';
+    import Meta from '$lib/my_components/meta.svelte';
     import Hero from '$lib/my_components/hero/hero.svelte';
-    import Catalog from '$lib/my_components/catalog/catalogList.svelte';
+    import Catalog from './catalog/catalogList.svelte';
+    import ChefList from './chef/chefList.svelte';
+    import Subscription from './subscription/subscription.svelte';
 </script>
 
-<Meta title="Kekiku | Home" />
+<Meta title="Kekiku | Home"/>
 <Hero/>
 <Catalog/>
+<ChefList/>
+<Subscription/>
 
 <style lang="scss">
   @use '$lib/variable' as v;

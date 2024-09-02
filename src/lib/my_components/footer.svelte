@@ -46,6 +46,16 @@
         </div>
     </div>
 </div>
+<!-- Back To Top -->
+<button
+        class="size-full bg-gray-150 hover:bg-gray-300 transition text-black py-3 px-4"
+        on:click={() => {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }}
+>
+    Back to top
+    <i class="fas fa-arrow-up ml-2"></i>
+</button>
 <!-- Footer -->
 <footer class="bg-gray-800 text-white">
     <div class="container-md mx-auto py-8">
@@ -87,17 +97,6 @@
 
 <style lang="scss">
   @use '$lib/variable' as v;
-
-  .bg-polka-dot {
-    background-color: #f9f9f9;
-    opacity: 0.85;
-    background-image: radial-gradient(v.$darkBlue50 1px , transparent 1px),
-    radial-gradient(v.$darkBlue50 1px, transparent 1px);
-    background-size: 52px 52px;
-    background-position: 0 0,
-    26px 26px;
-  }
-
   input[type='email'] {
     border: 1px solid #d1d5db;
     background-color: rgba(255, 255, 255, 0.46);

@@ -72,9 +72,6 @@
             <div class="flex-1 mr-8">
             </div>
         </div>
-
-
-        <!-- Header Default -->
         <div class="hide-on-tab flex">
             <ul class="flex-1 items-center ml-16 hide-on-tab">
                 <li><a href="/products">ORDER</a></li>
@@ -107,7 +104,6 @@
                                        aria-label="Search">
                             </form>
                         {/if}
-                        }
                     </div>
                 </div>
                 <li class=""><a href="/login">LOGIN</a></li>
@@ -130,10 +126,10 @@
                     </form>
                 </li>
                 <li><a class="btn container-fluid" href="/">Home</a></li>
-                <li><a class="btn container-fluid" href="/login">Login</a></li>
                 <li><a class="btn container-fluid" href="/order">Order</a></li>
                 <li><a class="btn container-fluid" href="/visit">Visit Us</a></li>
                 <li><a class="btn container-fluid" href="/contact">Contact</a></li>
+                <li><a class="btn container-fluid" href="/login">Login</a></li>
             </menu>
         </div>
     </nav>
